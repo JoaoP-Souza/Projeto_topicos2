@@ -31,10 +31,6 @@ y_new1 = np.array(df_saida)
 dados_saida = np.random.rand(100, 2)  # Best_X e Best_Y
 dados_entrada = np.random.rand(100, 20)  # Pos_X e Pos_Y
 
-# Salvar os dados em arquivos CSV
-pd.DataFrame(dados_saida, columns=["Best_X", "Best_Y"]).to_csv("dados1.csv", index=False)
-pd.DataFrame(dados_entrada).to_csv("dados2.csv", index=False, header=[f"Pos_{i+1}" for i in range(20)])
-
 print("Dados salvos em arquivos")
 
 # Convertendo a lista de listas para uma matriz numpy 100x20
