@@ -27,7 +27,7 @@ y_new = y[1:800, :]
 df_saida = pd.read_csv("dados_saida.csv")
 y_new1 = np.array(df_saida)
 
-# Dados simulados (substituir pelos seus)
+# Dados simulados
 dados_saida = np.random.rand(100, 2)  # Best_X e Best_Y
 dados_entrada = np.random.rand(100, 20)  # Pos_X e Pos_Y
 
